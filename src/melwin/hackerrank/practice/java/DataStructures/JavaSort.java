@@ -1,4 +1,4 @@
-package melwin.hackerrank.practice;
+package melwin.hackerrank.practice.java.DataStructures;
 
 import java.util.*;
 
