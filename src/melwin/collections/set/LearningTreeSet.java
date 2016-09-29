@@ -1,5 +1,6 @@
 package melwin.collections.set;
 
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -32,7 +33,7 @@ public class LearningTreeSet {
 	}
 
 	public static void main(String[] args) {
-		Set<Student> s = new TreeSet<Student>();
+		TreeSet<Student> s = new TreeSet<Student>();
 		
 		System.out.println("\nGoing to add new Student(1)");
 		if(s.add(new Student(1))) System.out.println("\tadding new Student(1) SUCCESS");
@@ -58,6 +59,28 @@ public class LearningTreeSet {
 		System.out.println("\nSearching three");
 		if(s.contains(three)) System.out.println("\tthree FOUND");
 		else System.out.println("\tthree NOT FOUND !!!");
+		
+		System.out.println("\nTreeSet : ");
+		Iterator<Student> i = s.iterator();
+		while(i.hasNext()){
+			Student current = i.next();
+			System.out.print(" "+current.roll_no+" ");
+			if(current.roll_no==3){
+				current.roll_no=0;
+			}
+		}
+
+		System.out.println("\nNew TreeSet:");
+		i = s.iterator();
+		while(i.hasNext()){
+			Student current = i.next();
+			System.out.print(" "+current.roll_no+" ");
+		}System.out.println();
+		//Here 0 is at the location of 3 and violated the 
+		//Tree property
+		
+		if(s.contains(new Student(0))) System.out.println(" 0 Found !!!");
+		// Search goes in the direction 2->1 and then ends
 	}
 
 }

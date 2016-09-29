@@ -89,7 +89,15 @@ NOTE : 	HashSet is backed by HashMap, so the Keys are the Elements
 		while(i.hasNext()){
 			Element current = i.next();
 			System.out.print(current.roll_no+" ");
+			if(current.roll_no==11)	current.roll_no=0;
+			// don't do this !!!
+			// better remove the element and reinsert !!!
 		}
+		
+		if(ts.contains(new Element(0))) System.out.println("contains zero");
+		// won't work. 0 is the wrong bucket[1] and the above
+		// search look in bucket[0]
+		
 	}
 
 }
