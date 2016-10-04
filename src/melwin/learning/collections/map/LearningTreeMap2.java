@@ -1,4 +1,4 @@
-package melwin.collections.map;
+package melwin.learning.collections.map;
 
 import java.util.Collection;
 import java.util.TreeMap;

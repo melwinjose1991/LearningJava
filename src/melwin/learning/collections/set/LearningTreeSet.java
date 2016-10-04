@@ -1,4 +1,4 @@
-package melwin.collections.set;
+package melwin.learning.collections.set;
 
 import java.util.Iterator;
 import java.util.Set;

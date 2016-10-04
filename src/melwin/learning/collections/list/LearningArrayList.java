@@ -1,4 +1,4 @@
-package melwin.collections.list;
+package melwin.learning.collections.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
