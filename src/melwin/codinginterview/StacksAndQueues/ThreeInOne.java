@@ -1,5 +1,9 @@
 package melwin.codinginterview.StacksAndQueues;
 
+/*
+ * Chapter  3   : Stacks and Queues
+ * Question 3.1 : Three In One
+ */
 public class ThreeInOne {
 
 	private static class ThreeStack {
