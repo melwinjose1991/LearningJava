@@ -13,7 +13,6 @@ import java.util.Map;
  * TAGS : ||NEW_TECHNIQUE|| ||ANAGRAM|| ||CRACKING||
  */
 
-
 public class GroupAnagrams {
 
 	private static HashMap<String, ArrayList<String>> table;
