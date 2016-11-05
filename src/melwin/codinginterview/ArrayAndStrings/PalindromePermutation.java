@@ -8,6 +8,7 @@ import java.util.Map;
  * Chapter 1 : Arrays And Strings
  * Question  : 1.4
  */
+
 public class PalindromePermutation {
 
 	private static boolean checkPalindromePermutation(String input) {
