@@ -69,6 +69,7 @@ public class LearningTreeSet {
 				current.roll_no=0;
 			}
 		}
+		System.out.println("\n\nChanged the value of 3 to 0 during the above iteration");
 
 		System.out.println("\nNew TreeSet:");
 		i = s.iterator();
@@ -79,7 +80,14 @@ public class LearningTreeSet {
 		//Here 0 is at the location of 3 and violated the 
 		//Tree property
 		
+		System.out.println("\nSearching for 0");
 		if(s.contains(new Student(0))) System.out.println(" 0 Found !!!");
+		else System.out.println("0 not FOUND!!!");
+		// Search goes in the direction 2->1 and then ends
+		
+		System.out.println("\nSearching for 3");
+		if(s.contains(new Student(3))) System.out.println(" 3 Found !!!");
+		else System.out.println("3 not FOUND!!!");
 		// Search goes in the direction 2->1 and then ends
 	}
 
