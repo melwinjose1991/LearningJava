@@ -1,4 +1,4 @@
-package melwin.hackerrank.practice.datastructures.tree;
+package melwin.hackerrank.practice.datastructures.trees;
 
 public class IsThisBST {
 
