@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class BinaryTreeRightSideView {
+
+public class Analyzed_BinaryTreeRightSideView {
 
 	private static int max_height = 0;
 	private static HashMap<Integer, ArrayList<Integer>> level_map;
@@ -18,6 +19,17 @@ public class BinaryTreeRightSideView {
 		if (node.right != null)
 			inOrderTraversal(node.right, lvl + 1);
 	}
+	
+	/* ||IMPROVEMENT|| above traversal visits the left children
+	 * first and is not level-by-level. Queue for each level could 
+	 * be avoided if this order could have been changed to visit the 
+	 * right children first at each level. 
+	 * 
+	 * ||BETTER_APPROACH|| modified BFS that indicates when a next
+	 * level has begun. Get queue size before starting the popping 
+	 * loop and only pop that many no of elements in that cycle,
+	 * first element popped is added to the final list.
+	 */
 
 	private static void addToMap(TreeNode node, int lvl) {
 		if (lvl > max_height)
@@ -99,7 +111,7 @@ public class BinaryTreeRightSideView {
 	public static void main(String[] args) {
 		String input = "4,3,6,1,5,2";
 
-		BinaryTreeRightSideView x = new BinaryTreeRightSideView();
+		Analyzed_BinaryTreeRightSideView x = new Analyzed_BinaryTreeRightSideView();
 		TreeNode root = x.deserialize(input);
 		System.out.println(x.rightSideView(root));
 	}
