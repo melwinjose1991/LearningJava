@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-/*
- * ||LEVEL_ORDER_TRAVERSAL|| ||Serialize_Deserialize||
- */
-public class SerializeAndDeserializeBST {
+// ||IMPROVABLE|| ||LEVEL_ORDER_TRAVERSAL|| ||Tree|| ||BFS||
+// ||Serialize_Deserialize||
+
+public class Analyzed_SerializeAndDeserializeBT {
 
 	private static StringBuilder serialized;
 	private static TreeMap<Integer, ArrayList<Integer>> level_map;
@@ -21,6 +21,13 @@ public class SerializeAndDeserializeBST {
 		if (node.right != null)
 			inOrderTraversal(node.right, lvl + 1);
 	}
+	
+	/* As the above traversal doesn't go level-by-level, you
+	 * required a HashMap to store separate List for each level.
+	 * BFS goes level-by-level !!! should have used that. With 
+	 * this you could have avoided HashMaps. Also should have used
+	 * some char to indicate null, like '#'
+	 */
 
 	private static void addToMap(TreeNode node, int lvl) {
 		if (level_map.containsKey(lvl)) {
@@ -75,7 +82,7 @@ public class SerializeAndDeserializeBST {
 		}
 		return root;
 	}
-
+	
 	// Decodes your encoded data to tree.
 	public TreeNode deserialize(String data) {
 		if (data == null)
@@ -89,6 +96,14 @@ public class SerializeAndDeserializeBST {
 		}
 		return root;
 	}
+	
+	/* The given tree is just a Binary Tree !!! OverEngineered the
+	 * de-serialize. We know the string is level by level, and that
+	 * null children are marked by #. Use the same Queue technique
+	 * to create the tree. Given [a] [#][b] [c][d] [e], we know that
+	 * a.l=null & a.r=b and since 2nd one is null b.l=c & b.r=d.
+	 * c.l=e and so on
+	 */
 
 	private static class TreeNode {
 		int val;
@@ -117,8 +132,8 @@ public class SerializeAndDeserializeBST {
 		root.right = right;
 		root.left = left;
 
-		SerializeAndDeserializeBST sol = new SerializeAndDeserializeBST();
-		inOrder(sol.deserialize(sol.serialize(null)));
+		Analyzed_SerializeAndDeserializeBT sol = new Analyzed_SerializeAndDeserializeBT();
+		inOrder(sol.deserialize(sol.serialize(root)));
 
 		System.out.println("Done");
 	}
