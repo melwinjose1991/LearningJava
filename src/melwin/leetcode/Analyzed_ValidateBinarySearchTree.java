@@ -1,5 +1,6 @@
 package melwin.leetcode;
 
+// ||NO_GLOBAL_VARIABLE|| ||MIN_MAX_VALUES|| ||BST||
 
 public class Analyzed_ValidateBinarySearchTree {
 
@@ -18,6 +19,7 @@ public class Analyzed_ValidateBinarySearchTree {
 	}
 
 	// Your solution for IsThisBST uses global static variable.
+	// This one doesn't and works on the same technique.
 	
 	public static class TreeNode {
 		int val;
