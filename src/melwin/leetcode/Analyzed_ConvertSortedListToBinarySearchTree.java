@@ -2,7 +2,9 @@ package melwin.leetcode;
 
 import java.util.ArrayList;
 
-public class ConvertSortedListToBinarySearchTree {
+// ||List_To_BST|| ||O_n|| ||Empty_Tree|| ||Inorder||
+
+public class Analyzed_ConvertSortedListToBinarySearchTree {
 
 	private TreeNode createEmptyTree(int n) {
 		TreeNode root = new TreeNode(0);
@@ -76,7 +78,7 @@ public class ConvertSortedListToBinarySearchTree {
 	}
 
 	public static void main(String[] args) {
-		ConvertSortedListToBinarySearchTree x = new ConvertSortedListToBinarySearchTree();
+		Analyzed_ConvertSortedListToBinarySearchTree x = new Analyzed_ConvertSortedListToBinarySearchTree();
 
 		ListNode three = new ListNode(2);
 		ListNode two = new ListNode(1);

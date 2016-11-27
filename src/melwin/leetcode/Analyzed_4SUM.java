@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 // ||k-SUM|| ||Time=N^(k-1)||
-// ||4SUM||
+// ||4SUM|| ||TWO_POINTER|| ||SORT||
 
 public class Analyzed_4SUM {
 
