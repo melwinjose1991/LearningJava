@@ -1,4 +1,4 @@
-package melwin.codinginterview.ArrayAndStrings;
+package melwin.codinginterview.A_ArrayAndStrings_DONE;
 
 import java.util.HashMap;
 import java.util.Iterator;
