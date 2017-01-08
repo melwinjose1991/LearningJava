@@ -18,10 +18,11 @@ public class Analyzed_GroupAnagrams {
 			for (int i = 0; i < str.length(); i++) {
 				arr[str.charAt(i) - 'a']++;
 			}
-			/* You had sorted which added an extra n.logn.
-			 * Another solution was to create hash 'a09b11..',
-			 * The optimal solution is similar, instead of using
-			 * numbers to count, this uses characters to count!!!
+			/*
+			 * You had sorted which added an extra n.logn. Another solution was
+			 * to create hash 'a09b11..', The optimal solution is similar,
+			 * instead of storing alphabets along with their count, just use the
+			 * count of a-z
 			 */
 			String ns = new String(arr);
 
