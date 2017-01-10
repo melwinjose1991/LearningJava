@@ -1,4 +1,4 @@
-package melwin.codinginterview.BitManipulation;
+package melwin.codinginterview.E_BitManipulation;
 
 /*
  * Chapter 	5 : Bit Manipulation
