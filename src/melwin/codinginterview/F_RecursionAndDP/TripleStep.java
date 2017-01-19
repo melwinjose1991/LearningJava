@@ -1,4 +1,4 @@
-package melwin.codinginterview.RecursionAndDP;
+package melwin.codinginterview.F_RecursionAndDP;
 
 import java.util.Arrays;
 
