@@ -1,6 +1,6 @@
 package melwin.learning.System.MultiThreading;
 
-// volatile : http://www.ibm.com/developerworks/java/library/j-jtp06197/index.html
+// || volatile || : http://www.ibm.com/developerworks/java/library/j-jtp06197/index.html
 
 public class TestingVolatile {
 	
