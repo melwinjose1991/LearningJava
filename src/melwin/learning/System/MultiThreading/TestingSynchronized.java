@@ -47,7 +47,7 @@ public class TestingSynchronized {
 	public synchronized void print2() {
 		System.out.println(Thread.currentThread().getName() + " in print2");
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(1000);
 			System.out.println(Thread.currentThread().getName() + " exiting print2");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -56,6 +56,9 @@ public class TestingSynchronized {
 
 	// 'ALL' synchronized blocks synchronized on the same object can only have one 
 	// thread executing inside them at the same time.
+	
+	// To make it faster use synchronized on two objects
+	// See 'TestingLocks.java'
 	
 	public static void main(String[] args) throws InterruptedException {
 		TestingSynchronized x = new TestingSynchronized();
