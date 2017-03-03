@@ -3,7 +3,7 @@ package melwin.hackerrank.practice.datastructures.trees;
 import java.util.Stack;
 
 // ||TREE|| ||TRAVERSALS|| ||INORDER|| ||POST ORDER|| ||PRE ORDER||
-// ||MORRISS|| ||STACKLESS|| ||NON RECURSIVE||
+// ||MORRIS|| ||STACKLESS|| ||NON RECURSIVE||
 
 public class Traversals {
 	public static class Node {
