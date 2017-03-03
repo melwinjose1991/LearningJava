@@ -53,36 +53,6 @@ public class LearningBST {
 		return is_bst;
 	}
 
-	// FIND Successor & Predecessor
-	private TreeNode predecessor, successor;
-
-	public void findSuccessorPredecessor(TreeNode root, int val) {
-		if (root != null) {
-			if (root.val == val) {
-				if (root.left != null) {
-					TreeNode t = root.left;
-					while (t.right != null) {
-						t = t.right;
-					}
-					predecessor = t;
-				}
-				if (root.right != null) {
-					TreeNode t = root.right;
-					while (t.left != null) {
-						t = t.left;
-					}
-					successor = t;
-				}
-			} else if (root.val > val) {
-				successor = root;
-				findSuccessorPredecessor(root.left, val);
-			} else if (root.val < val) {
-				predecessor = root;
-				findSuccessorPredecessor(root.right, val);
-			}
-		}
-	}
-
 	public static class TreeNode {
 		int val;
 		TreeNode left;
@@ -113,10 +83,5 @@ public class LearningBST {
 		System.out.println("\n\nisValidBST: "+x.isValidBST(root));
 		System.out.println("isValidBST2: "+x.isValidBST2(root));
 
-		int value = 35;
-		x.findSuccessorPredecessor(root, value);
-		System.out.println("\nValue: " + value);
-		System.out.println("Predecessor: " + (x.predecessor == null ? "NIL" : x.predecessor.val));
-		System.out.println("Sucessor: " + (x.successor == null ? "NIL" : x.successor.val));
 	}
 }
