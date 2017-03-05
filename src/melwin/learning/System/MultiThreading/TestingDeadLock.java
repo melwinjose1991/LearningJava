@@ -143,7 +143,6 @@ public class TestingDeadLock {
 	// Solution
 	public void method1() {
 		synchronized (Integer.class) {
-			Thread.currentThread().holdsLock(this);
 			System.out.println("Aquired lock on Integer.class object");
 			synchronized (String.class) {
 				System.out.println("Aquired lock on String.class object");
