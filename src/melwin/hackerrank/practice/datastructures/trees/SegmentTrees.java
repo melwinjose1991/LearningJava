@@ -68,7 +68,8 @@ public class SegmentTrees {
 				rangeMinimumQuery(segmentTree, mid + 1, high, qlow, qhigh, 2 * pos + 2));
 	}
 
-
+	// TODO : Look into lazy propagation as well
+	//			Lazy Propagation Segment Tree
 	public static void main(String args[]) {
 		int input[] = { 0, 3, 4, 2, 1, 6, -1 };
 		int segTree[] = createSegmentTree(input);
