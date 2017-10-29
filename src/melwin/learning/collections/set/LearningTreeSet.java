@@ -1,7 +1,6 @@
 package melwin.learning.collections.set;
 
 import java.util.Iterator;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class LearningTreeSet {
@@ -48,7 +47,7 @@ public class LearningTreeSet {
 		else System.out.println("\tadding new Student(2) FAIL !!!");
 		
 		Student three = new Student(3);
-		System.out.println("\nGoing to three");
+		System.out.println("\nGoing to add three");
 		if(s.add(three)) System.out.println("\tadding three SUCCESS");
 		else System.out.println("\tadding three FAIL !!!");
 		

@@ -40,7 +40,6 @@ The contract between equals() and hashCode() is:
 
 NOTE : 	HashSet is backed by HashMap, so the Keys are the Elements
 		and values are all references to the SAME dummy objects.
-		Highlighted in the image
 */
 		
 		/* Default equals()
