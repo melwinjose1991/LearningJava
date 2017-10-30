@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 // ||TWO_POINTER_SINGLE_LOOP|| ||STRING|| ||O_n|| 
 
-public class Analyzed_LongestSubstringWithoutRepeatingCharacters {
+public class LongestSubstringWithoutRepeatingCharacters {
 
 	public int lengthOfLongestSubstring(String s) {
 		if (s == null || s.length() == 0)
@@ -33,7 +33,7 @@ public class Analyzed_LongestSubstringWithoutRepeatingCharacters {
 	}
 
 	public static void main(String[] args) {
-		Analyzed_LongestSubstringWithoutRepeatingCharacters x = new Analyzed_LongestSubstringWithoutRepeatingCharacters();
+		LongestSubstringWithoutRepeatingCharacters x = new LongestSubstringWithoutRepeatingCharacters();
 		System.out.println(x.lengthOfLongestSubstring("pwwkew"));
 	}
 
