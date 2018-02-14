@@ -4,8 +4,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-import melwin.leetcode.medium.MergeIntervals.Interval;
-
 // 253 - Meeting Rooms II
 
 public class MeetingRoomsII {

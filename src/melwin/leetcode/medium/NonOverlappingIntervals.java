@@ -3,8 +3,6 @@ package melwin.leetcode.medium;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import melwin.leetcode.medium.MergeIntervals.Interval;
-
 // 435 - Non-overlapping Intervals - O(N.logN)
 
 public class NonOverlappingIntervals {
