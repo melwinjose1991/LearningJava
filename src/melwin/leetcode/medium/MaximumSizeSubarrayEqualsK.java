@@ -2,7 +2,7 @@ package melwin.leetcode.medium;
 
 import java.util.HashMap;
 
-// LEETCODE - 325 - Maximum Size Subarray Equals K - O(n)
+// 325 - Maximum Size Subarray Equals K - O(n)
 // HashMap - stores cumulative <sum,index>
 // Dynamic Programming
 

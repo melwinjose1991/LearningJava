@@ -13,7 +13,10 @@ public class AlienDictionary {
 	
 	public String alienOrder(String[] words) {
 		
+		// key=char1	value=<set of chars that occur after char1>
 		Map<Character, Set<Character>> map = new HashMap<Character, Set<Character>>();
+		
+		// key=char1	value=#of chars that occur before this
 		Map<Character, Integer> degree = new HashMap<Character, Integer>();
 		String result = "";
 		

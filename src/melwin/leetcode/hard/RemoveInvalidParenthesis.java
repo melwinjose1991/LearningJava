@@ -14,6 +14,10 @@ public class RemoveInvalidParenthesis {
 		return ans;
 	}
 
+	// First fix all the extra )s one by one till the end of the string.
+	// Now reverse the strings and fix all the extra (s one-by-one till
+	// the end of the string. After doing it both the ways save the
+	// resulting strings.
 	public void remove(String s, List<String> ans, int last_i, int last_j, char[] par) {
 
 		for (int stack = 0, i = last_i; i < s.length(); ++i) {
