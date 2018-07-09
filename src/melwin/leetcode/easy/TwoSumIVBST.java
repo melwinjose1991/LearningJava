@@ -7,7 +7,7 @@ import melwin.leetcode.medium.TreeNode;
 // 653 - Two Sum IV - Input is BST - O(N) / O(logN)
 
 public class TwoSumIVBST {
-	
+
 	public boolean findTarget(TreeNode root, int k) {
 		if (root == null)
 			return false;

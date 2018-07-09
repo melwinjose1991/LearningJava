@@ -6,7 +6,7 @@ import java.util.HashMap;
 // 261 - Graph Valid Tree 
 
 public class GraphValidTree {
-	
+
 	public boolean validTree(int n, int[][] edges) {
 		HashMap<Integer, ArrayList<Integer>> map = new HashMap<Integer, ArrayList<Integer>>();
 		for (int i = 0; i < n; i++) {

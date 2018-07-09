@@ -6,7 +6,7 @@ import java.util.Queue;
 // 286 - Walls and Gates - O(mn) - BFS from gates
 
 public class WallsAndGates {
-	
+
 	public void wallsAndGates(int[][] rooms) {
 		if (rooms.length == 0 || rooms[0].length == 0)
 			return;

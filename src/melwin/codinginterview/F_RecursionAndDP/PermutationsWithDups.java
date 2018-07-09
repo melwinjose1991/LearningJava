@@ -46,7 +46,7 @@ public class PermutationsWithDups {
 	}
 
 	public static void main(String[] args) {
-		//String s = "aabbccc";
+		// String s = "aabbccc";
 		String s = "aaaaaaaaaaaaaaaa";
 		ArrayList<String> result = printPerms(s);
 		System.out.println("Count: " + result.size());

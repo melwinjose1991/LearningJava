@@ -47,7 +47,7 @@ public class GroupShiftedStrings {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(groupStrings(new String[]{"ba"}));
+		System.out.println(groupStrings(new String[] { "ba" }));
 	}
 
 }

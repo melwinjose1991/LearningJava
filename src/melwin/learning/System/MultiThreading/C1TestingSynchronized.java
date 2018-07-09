@@ -54,12 +54,12 @@ public class C1TestingSynchronized {
 		}
 	}
 
-	// 'ALL' synchronized blocks synchronized on the same object can only have one 
+	// 'ALL' synchronized blocks synchronized on the same object can only have one
 	// thread executing inside them at the same time.
-	
+
 	// To make it faster use synchronized on two objects
 	// See 'TestingLocks.java'
-	
+
 	public static void main(String[] args) throws InterruptedException {
 		C1TestingSynchronized x = new C1TestingSynchronized();
 		Thread t1 = new Thread(new T1(x));

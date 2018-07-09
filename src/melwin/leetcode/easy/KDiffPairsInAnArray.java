@@ -6,7 +6,7 @@ import java.util.Map;
 // 532 - K-Diff Pairs In An Array
 
 public class KDiffPairsInAnArray {
-	
+
 	public int findPairs(int[] nums, int k) {
 		if (nums == null || nums.length == 0 || k < 0)
 			return 0;

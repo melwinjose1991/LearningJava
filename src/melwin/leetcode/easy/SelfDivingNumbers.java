@@ -6,7 +6,7 @@ import java.util.List;
 // 728 - Self Dividing Numbers - O(nm)
 
 public class SelfDivingNumbers {
-	
+
 	public List<Integer> selfDividingNumbers(int left, int right) {
 		List<Integer> list = new ArrayList<>();
 		for (int i = left; i <= right; i++) {

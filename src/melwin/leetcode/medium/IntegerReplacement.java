@@ -6,7 +6,7 @@ package melwin.leetcode.medium;
 public class IntegerReplacement {
 
 	public int integerReplacement(int n) {
-		
+
 		int c = 0;
 		while (n != 1) {
 			if ((n & 1) == 0) {
@@ -20,7 +20,7 @@ public class IntegerReplacement {
 			++c;
 		}
 		return c;
-		
+
 	}
 
 	public static void main(String[] args) {

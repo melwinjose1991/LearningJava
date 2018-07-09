@@ -9,11 +9,10 @@ import java.util.Arrays;
  * TAGS : ||CRACKING|| ||NEW_TECHNIQUE|| 
  */
 
-
 public class PeaksAndValleys {
 
-	private static int[] array = {5,1,3,2,3};
-	
+	private static int[] array = { 5, 1, 3, 2, 3 };
+
 	private static void sort() {
 		for (int i = 1; i < array.length; i += 2) {
 			int index = indexOfMin(i - 1, i, i + 1);
@@ -42,7 +41,7 @@ public class PeaksAndValleys {
 
 	public static void main(String[] args) {
 		sort();
-		
+
 		// ||NEW_TECHNIQUE||
 		System.out.println(Arrays.toString(array));
 	}

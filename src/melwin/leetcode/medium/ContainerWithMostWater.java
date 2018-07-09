@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 11 - Container with most water - O(n) - Two Pointer
 
 public class ContainerWithMostWater {
-	
+
 	public int maxArea(int[] height) {
 		int left = 0, right = height.length - 1;
 		int maxArea = 0;

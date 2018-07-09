@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // LEETCODE - 75 - Sort Colors - O(n)
 
 public class SortColors {
-	
+
 	public void sortColors(int[] A) {
 
 		int num0 = 0, num1 = 0, num2 = 0;

@@ -6,14 +6,14 @@ import java.util.List;
 // 731 - My Calendar II
 
 public class MyCalendarII {
-	
+
 	private List<int[]> bookings;
 	private List<int[]> overlaps;
 
 	public MyCalendarII() {
-        bookings = new ArrayList<>();
-        overlaps = new ArrayList<>();
-    }
+		bookings = new ArrayList<>();
+		overlaps = new ArrayList<>();
+	}
 
 	public boolean book(int start, int end) {
 		for (int[] bo : bookings) {

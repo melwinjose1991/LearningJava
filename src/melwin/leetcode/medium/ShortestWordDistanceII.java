@@ -11,19 +11,19 @@ public class ShortestWordDistanceII {
 	Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
 
 	public ShortestWordDistanceII(String[] words) {
- 
-        for (int i = 0; i < words.length; i++) {
-            String curWord = words[i];
-            if (map.containsKey(curWord)) {
-                map.get(curWord).add(i);
-            } else {
-                List<Integer> list = map.get(curWord);
-                list.add(i);
-                map.put(curWord, list);
-            }
- 
-        }
-    }
+
+		for (int i = 0; i < words.length; i++) {
+			String curWord = words[i];
+			if (map.containsKey(curWord)) {
+				map.get(curWord).add(i);
+			} else {
+				List<Integer> list = map.get(curWord);
+				list.add(i);
+				map.put(curWord, list);
+			}
+
+		}
+	}
 
 	public int shortestDistance(String word1, String word2) {
 		List<Integer> indexList1 = map.get(word1);

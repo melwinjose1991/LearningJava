@@ -4,7 +4,7 @@ package melwin.leetcode.medium;
 // Check if p and q are on the left or right of the current node
 
 public class LowestCommonAncestorOfABinaryTree {
-	
+
 	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		if (root == null || root == p || root == q)
 			return root;

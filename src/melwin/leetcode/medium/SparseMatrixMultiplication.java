@@ -4,7 +4,7 @@ package melwin.leetcode.medium;
 // Multiply only the non-zero elements
 
 public class SparseMatrixMultiplication {
-	
+
 	public int[][] multiply(int[][] A, int[][] B) {
 		int m = A.length, n = A[0].length, nB = B[0].length;
 		int[][] C = new int[m][nB];

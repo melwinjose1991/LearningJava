@@ -60,13 +60,13 @@ public class Intersection {
 		Node d = new Node(4);
 		Node e = new Node(5);
 		Node f = new Node(6);
-		
+
 		e.next = f;
 		d.next = e;
 		a.next = d;
 		c.next = d;
 		b.next = c;
-		
+
 		Intersection x = new Intersection();
 		System.out.println(x.checkIntersection(a, b));
 	}

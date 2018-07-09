@@ -12,7 +12,7 @@ interface A {
 	default void printThree() {
 		System.out.println("A's printThree");
 	}
-	
+
 	void printFour();
 }
 
@@ -53,5 +53,5 @@ public class Diamond implements B, C {
 	public void printFour() {
 		System.out.println("D's printFour");
 	}
-	
+
 }

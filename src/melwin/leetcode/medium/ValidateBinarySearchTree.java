@@ -6,7 +6,7 @@ import java.util.Stack;
 // BST - Stack
 
 public class ValidateBinarySearchTree {
-	
+
 	public boolean isValidBST(TreeNode root) {
 		if (root == null)
 			return true;
@@ -14,12 +14,12 @@ public class ValidateBinarySearchTree {
 		TreeNode pre = null;
 
 		while (root != null || !stack.isEmpty()) {
-			
+
 			while (root != null) {
 				stack.push(root);
 				root = root.left;
 			}
-			
+
 			root = stack.pop();
 			if (pre != null && root.val <= pre.val)
 				return false;

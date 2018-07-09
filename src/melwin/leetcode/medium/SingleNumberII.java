@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 137 - Single Number II - O(n) / O(1) : bit-based counter for each of the 32bits
 
 public class SingleNumberII {
-	
+
 	public int singleNumber(int[] nums) {
 
 		int x1 = 0, x2 = 0, mask = 0;

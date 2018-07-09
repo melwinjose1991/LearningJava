@@ -16,29 +16,29 @@ import java.util.Map;
 public class GroupAnagrams {
 
 	private static HashMap<String, ArrayList<String>> table;
-	
-	private static void putToTable(){
-		for(String s : input){
+
+	private static void putToTable() {
+		for (String s : input) {
 			char[] array = s.toCharArray();
 			Arrays.sort(array);
 			String sorted = new String(array);
-			if(table.get(sorted)==null){
-				table.put(sorted,new ArrayList<String>());
+			if (table.get(sorted) == null) {
+				table.put(sorted, new ArrayList<String>());
 			}
 			table.get(sorted).add(s);
 		}
 	}
-	
-	private static void printTable(){
+
+	private static void printTable() {
 		Iterator i = table.entrySet().iterator();
-		while(i.hasNext()){
-			 Map.Entry pair = (Map.Entry)i.next();
-			 System.out.println(pair.getKey()+"\t"+pair.getValue().toString());
+		while (i.hasNext()) {
+			Map.Entry pair = (Map.Entry) i.next();
+			System.out.println(pair.getKey() + "\t" + pair.getValue().toString());
 		}
 	}
-	
+
 	private static ArrayList<String> input;
-	
+
 	public static void main(String[] args) {
 		table = new HashMap<>();
 		input = new ArrayList<>();
@@ -48,7 +48,7 @@ public class GroupAnagrams {
 		input.add("ate");
 		input.add("nat");
 		input.add("bat");
-		
+
 		putToTable();
 		printTable();
 	}

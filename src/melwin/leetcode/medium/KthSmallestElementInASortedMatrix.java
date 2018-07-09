@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 // 378 - Kth Smallest Element in a Sorted Matrix - O(k.logN) - use min_heap(size=column)
 
 public class KthSmallestElementInASortedMatrix {
-	
+
 	public int kthSmallest(int[][] matrix, int k) {
 		int n = matrix.length;
 		PriorityQueue<Tuple> pq = new PriorityQueue<Tuple>();

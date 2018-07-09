@@ -32,29 +32,29 @@ public class Insertion {
 
 	public static void main(String[] args) {
 		int M = 2, N = 65;
-		int i = 2, j=4;
+		int i = 2, j = 4;
 
 		printBinary(N);
 		printBinary(M);
 
 		int term_0 = (-1 << j);
 		printBinary(term_0);
-		
+
 		int term_1 = term_0 & N;
 		printBinary(term_1);
-		
-		int term_2 = (-1 >>> 32-i);
+
+		int term_2 = (-1 >>> 32 - i);
 		printBinary(term_2);
-		
+
 		int term_3 = term_2 & N;
 		printBinary(term_3);
-		
+
 		int term_4 = term_1 ^ term_3;
 		printBinary(term_4);
-		
-		int term_5 = M << i ;
+
+		int term_5 = M << i;
 		printBinary(term_5);
-		
+
 		int ans = term_4 ^ term_5;
 		printBinary(ans);
 	}

@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 769 - Max Sorted To Make Sorted - O(n) - max[i] == i
 
 public class MaxChunksToMakeSorted {
-	
+
 	public int maxChunksToSorted(int[] arr) {
 		if (arr == null || arr.length == 0)
 			return 0;

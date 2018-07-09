@@ -7,14 +7,14 @@ import melwin.leetcode.hard.ListNode;
 public class RemoveLinkedListElements {
 
 	public ListNode removeElements(ListNode head, int val) {
-		ListNode curr = head, prev = null, new_head=null;
+		ListNode curr = head, prev = null, new_head = null;
 		while (curr != null) {
 			if (curr.val == val) {
 				if (prev != null) {
 					prev.next = curr.next;
 				}
 			} else {
-				if(prev==null){
+				if (prev == null) {
 					new_head = curr;
 				}
 				prev = curr;

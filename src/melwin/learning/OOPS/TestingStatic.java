@@ -33,11 +33,11 @@ public class TestingStatic {
 
 	public static void main(String[] args) {
 		Base b = new Child();
-		b.baseStatic();		//calls base's baseStatic. cannot override static methods
-		b.baseNonStatic();	//calls child's baseNonStatic
-		
+		b.baseStatic(); // calls base's baseStatic. cannot override static methods
+		b.baseNonStatic(); // calls child's baseNonStatic
+
 		Child c = new Child();
-		c.baseStatic();		// calls child's baseStatic
+		c.baseStatic(); // calls child's baseStatic
 	}
 
 }

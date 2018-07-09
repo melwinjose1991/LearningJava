@@ -4,13 +4,13 @@ package melwin.leetcode.medium;
 // Use Trie to store bit representation of the num
 
 public class MaximumXOROfTwoNumbersInAnArray {
-	
+
 	public int findMaximumXOR(int[] nums) {
-		
+
 		if (nums == null || nums.length == 0) {
 			return 0;
 		}
-		
+
 		// Init Trie.
 		Object[] root = { null, null };
 		for (int num : nums) {
@@ -23,7 +23,7 @@ public class MaximumXOROfTwoNumbersInAnArray {
 				curNode = (Object[]) curNode[curBit];
 			}
 		}
-		
+
 		int max = Integer.MIN_VALUE;
 		for (int num : nums) {
 			Object[] curNode = root;
@@ -39,7 +39,7 @@ public class MaximumXOROfTwoNumbersInAnArray {
 			}
 			max = Math.max(curSum, max);
 		}
-		
+
 		return max;
 	}
 

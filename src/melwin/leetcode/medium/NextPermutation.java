@@ -8,7 +8,7 @@ public class NextPermutation {
 		int n = num.length;
 		if (n < 2)
 			return;
-		
+
 		// find the 1st decreasing element from
 		// the right
 		int index = n - 1;
@@ -17,7 +17,7 @@ public class NextPermutation {
 				break;
 			index--;
 		}
-		
+
 		if (index == 0) {
 			reverseSort(num, 0, n - 1);
 			return;
@@ -31,7 +31,7 @@ public class NextPermutation {
 				j--;
 			}
 			swap(num, j, index - 1);
-			
+
 			// sort the right
 			reverseSort(num, index, n - 1);
 			return;

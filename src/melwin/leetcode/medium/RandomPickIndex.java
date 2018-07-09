@@ -5,14 +5,14 @@ import java.util.Random;
 // 398 - Random Pick Index - O(n) - Random trick
 
 public class RandomPickIndex {
-	
+
 	int[] nums;
 	Random rnd;
 
 	public RandomPickIndex(int[] nums) {
-        this.nums = nums;
-        this.rnd = new Random();
-    }
+		this.nums = nums;
+		this.rnd = new Random();
+	}
 
 	public int pick(int target) {
 		int result = -1;

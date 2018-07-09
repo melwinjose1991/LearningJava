@@ -6,7 +6,7 @@ public class TargetSum {
 
 	// sum(P) -sum(N) = target (adding sum(P)+sum(N) on both sides and solve for
 	// sum(p))
-	
+
 	// sum(P) = (target+sum)/2
 
 	public int findTargetSumWays(int[] nums, int s) {

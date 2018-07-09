@@ -9,7 +9,7 @@ import java.util.Queue;
 // 218 - The Skyline Problem - O(n.logn) - Line sweep left to right
 
 public class TheSkylineProblem {
-	
+
 	public List<int[]> getSkyline(int[][] buildings) {
 		List<int[]> result = new ArrayList<>();
 		List<int[]> height = new ArrayList<>();

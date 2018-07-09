@@ -8,7 +8,7 @@ import melwin.leetcode.medium.Interval;
 // 252 - Meeting Rooms
 
 public class MeetingRooms {
-	
+
 	public boolean canAttendMeetings(Interval[] intervals) {
 		Arrays.sort(intervals, new Comparator<Interval>() {
 			public int compare(Interval a, Interval b) {

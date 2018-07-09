@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 748. Shortest Completing Word
 
 public class ShortestCompletingWord {
-	
+
 	public String shortestCompletingWord(String licensePlate, String[] words) {
 		String target = licensePlate.toLowerCase();
 		int[] charMap = new int[26];
@@ -12,7 +12,7 @@ public class ShortestCompletingWord {
 			if (Character.isLetter(target.charAt(i)))
 				charMap[target.charAt(i) - 'a']++;
 		}
-		
+
 		int minLength = Integer.MAX_VALUE;
 		String result = null;
 		for (int i = 0; i < words.length; i++) {
@@ -22,7 +22,7 @@ public class ShortestCompletingWord {
 				result = words[i];
 			}
 		}
-		
+
 		return result;
 	}
 

@@ -5,16 +5,16 @@ import java.util.Stack;
 // 227 - Basic Calculator II - O(n) : use stack
 
 public class BasicCalculatorII {
-	
+
 	public int calculate(String s) {
 		int len;
 		if (s == null || (len = s.length()) == 0)
 			return 0;
-		
+
 		Stack<Integer> stack = new Stack<Integer>();
 		int num = 0;
 		char sign = '+';
-		
+
 		for (int i = 0; i < len; i++) {
 			if (Character.isDigit(s.charAt(i))) {
 				num = num * 10 + s.charAt(i) - '0';

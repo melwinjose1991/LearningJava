@@ -3,7 +3,7 @@ package melwin.leetcode.hard;
 // 157 - Read N Characters Given Read4 - Corner Cases
 
 public class ReadNCharGivenReadFour {
-	
+
 	public int read(char[] buf, int n) {
 		boolean eof = false;
 		int charsRead = 0;
@@ -25,8 +25,8 @@ public class ReadNCharGivenReadFour {
 
 		return charsRead;
 	}
-	
-	public int read4(char[] buf){
+
+	public int read4(char[] buf) {
 		return 0;
 	}
 

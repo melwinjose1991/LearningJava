@@ -53,7 +53,7 @@ public class DTestingLocks {
 
 	public static void main(String[] args) {
 		DTestingLocks x = new DTestingLocks();
-		
+
 		long start = System.currentTimeMillis();
 		Thread t1 = new Thread(new Runnable() {
 			public void run() {

@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 221 - Maximal Square - O(mn) - DP
 
 public class MaximalSquare {
-	
+
 	public int maximalSquare(char[][] a) {
 
 		if (a.length == 0)

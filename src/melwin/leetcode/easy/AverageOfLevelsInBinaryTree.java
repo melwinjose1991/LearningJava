@@ -10,7 +10,7 @@ import melwin.leetcode.medium.TreeNode;
 // 637 - Average Of Levels In Binary Tree
 
 public class AverageOfLevelsInBinaryTree {
-	
+
 	public List<Double> averageOfLevels(TreeNode root) {
 		List<Double> result = new ArrayList<>();
 		Queue<TreeNode> q = new LinkedList<>();

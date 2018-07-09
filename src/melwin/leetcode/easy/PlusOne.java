@@ -3,7 +3,7 @@ package melwin.leetcode.easy;
 // 66 - Plus One
 
 public class PlusOne {
-	
+
 	public int[] plusOne(int[] digits) {
 		int n = digits.length;
 		for (int i = n - 1; i >= 0; i--) {

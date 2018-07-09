@@ -7,7 +7,6 @@ package melwin.codinginterview.SortingAndSearching;
  * TAGS : ||BINARY_SEARCH|| ||CRACKING||
  */
 
-
 public class SparseSearch {
 
 	private static String find;
@@ -20,12 +19,12 @@ public class SparseSearch {
 		while ((mid <= end) && input[mid].equals("")) {
 			mid++;
 		}
-		if( mid > end){
+		if (mid > end) {
 			mid = (start + end) / 2;
 			while ((mid >= start) && input[mid].equals("")) {
 				mid--;
 			}
-			if(mid<start){
+			if (mid < start) {
 				return false;
 			}
 		}
@@ -40,10 +39,11 @@ public class SparseSearch {
 	}
 
 	public static void main(String[] args) {
-		String[] input = { "at", "", "", "", "ball", "", "", "car", "", "", "dad", "", "","elf" };
-		
-		for(String s : input){
-			if(s.length()==0) continue;
+		String[] input = { "at", "", "", "", "ball", "", "", "car", "", "", "dad", "", "", "elf" };
+
+		for (String s : input) {
+			if (s.length() == 0)
+				continue;
 			find = s;
 			if (binarySearch(input, 0, input.length - 1))
 				System.out.println("FOUND");

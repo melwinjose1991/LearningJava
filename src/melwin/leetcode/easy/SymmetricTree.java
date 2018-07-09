@@ -5,7 +5,7 @@ import melwin.leetcode.medium.TreeNode;
 // 101 - Symmetric Tree - O(n)
 
 public class SymmetricTree {
-	
+
 	public boolean isSymmetric(TreeNode root) {
 		return root == null || isSymmetricHelp(root.left, root.right);
 	}

@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 684 - Redundant Connection - Amortized Algorithm using Union Set
 
 public class RedundantConnection {
-	
+
 	public int[] findRedundantConnection(int[][] edges) {
 		int[] parent = new int[2001];
 		for (int i = 0; i < parent.length; i++)

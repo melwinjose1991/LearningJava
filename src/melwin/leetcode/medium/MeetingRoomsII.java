@@ -22,9 +22,9 @@ public class MeetingRoomsII {
 		});
 
 		int maxOverlappingMeetings = 0;
-		PriorityQueue<Integer> pq = new PriorityQueue<>(); 
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
 
-		for (int i = 0; i < intervals.length; i++) { 
+		for (int i = 0; i < intervals.length; i++) {
 			pq.add(intervals[i].end);
 			while (pq.size() > 0 && intervals[i].start >= pq.peek())
 				pq.remove();

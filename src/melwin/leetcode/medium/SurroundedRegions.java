@@ -26,7 +26,7 @@ public class SurroundedRegions {
 			if (board[m - 1][j] == 'O')
 				boundaryDFS(board, m - 1, j);
 		}
-		
+
 		// post-prcessing, turn 'O' to 'X', '*' back to 'O', keep 'X' intact.
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {

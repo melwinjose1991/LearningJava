@@ -5,7 +5,7 @@ import java.util.Arrays;
 // 556. Next Greater Element III
 
 public class NextGreaterElementIII {
-	
+
 	public int nextGreaterElement(int n) {
 		char[] number = (n + "").toCharArray();
 

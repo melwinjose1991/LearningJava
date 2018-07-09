@@ -5,7 +5,7 @@ import melwin.leetcode.medium.TreeNode;
 // 108 - Convert Sorted Array to BST - O(n)
 
 public class ConvertSortedArrayToBinarySearchTree {
-	
+
 	public TreeNode sortedArrayToBST(int[] num) {
 		if (num.length == 0) {
 			return null;

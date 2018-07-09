@@ -6,7 +6,7 @@ import java.util.Comparator;
 // 435 - Non-overlapping Intervals - O(N.logN)
 
 public class NonOverlappingIntervals {
-	
+
 	public int eraseOverlapIntervals(Interval[] intervals) {
 		if (intervals.length == 0)
 			return 0;

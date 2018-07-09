@@ -3,9 +3,9 @@ package melwin.learning.System.MultiThreading;
 // || volatile || : http://www.ibm.com/developerworks/java/library/j-jtp06197/index.html
 
 public class BTestingVolatile {
-	
+
 	private static volatile int testValue;
-	
+
 	static class ExampleThread extends Thread {
 
 		public ExampleThread(String str) {

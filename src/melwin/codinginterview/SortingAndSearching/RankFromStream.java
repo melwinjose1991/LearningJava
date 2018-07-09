@@ -73,7 +73,7 @@ public class RankFromStream {
 		for (int i = 0; i < list.length; i++) {
 			track(list[i]);
 		}
-		
+
 		System.out.println("Array: " + arrayToString(list));
 
 		int[] tracker = new int[size];

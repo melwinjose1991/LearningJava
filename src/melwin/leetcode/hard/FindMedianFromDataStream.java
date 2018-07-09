@@ -9,10 +9,10 @@ public class FindMedianFromDataStream {
 
 	PriorityQueue<Integer> min, max;
 
-	public FindMedianFromDataStream(){
-        min = new PriorityQueue<Integer>();
-        max = new PriorityQueue<Integer>(Collections.reverseOrder());
-    }
+	public FindMedianFromDataStream() {
+		min = new PriorityQueue<Integer>();
+		max = new PriorityQueue<Integer>(Collections.reverseOrder());
+	}
 
 	public void addNum(int num) {
 		max.offer(num);

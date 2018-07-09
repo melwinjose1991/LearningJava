@@ -29,8 +29,7 @@ public class ValidSquare {
 		int[] D = points[3];
 
 		return (dist(A, B) == dist(B, D) && dist(D, C) == dist(C, A) && dist(D, C) == dist(C, A))
-				&& (dist(A, D) == dist(B, C)
-				&& dist(A,B)!=0);
+				&& (dist(A, D) == dist(B, C) && dist(A, B) != 0);
 
 	}
 

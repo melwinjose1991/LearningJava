@@ -128,10 +128,10 @@ public class KDeadLock {
 	}
 
 	/*
-	 * This method also requests same two lock but in exactly Opposite order
-	 * i.e. first Integer and then String. This creates potential deadlock, if
-	 * one thread holds String lock and other holds Integer lock and they wait
-	 * for each other, forever.
+	 * This method also requests same two lock but in exactly Opposite order i.e.
+	 * first Integer and then String. This creates potential deadlock, if one thread
+	 * holds String lock and other holds Integer lock and they wait for each other,
+	 * forever.
 	 */ public void method2Deadlocked() {
 		synchronized (Integer.class) {
 			System.out.println("Aquired lock on Integer.class object");

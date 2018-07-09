@@ -45,13 +45,12 @@ public class Fibonacci {
 			f.join();
 			long end = System.currentTimeMillis();
 			System.out.println("Parallel-Fibonacci:" + f.answer + "\tTime:" + (end - start));
-			
+
 			start = System.currentTimeMillis();
 			long result = RFibo(n);
 			end = System.currentTimeMillis();
 			System.out.println("Normal-Fibonacci:" + result + "\tTime:" + (end - start));
-			
-			
+
 		} catch (Exception e) {
 		}
 	}

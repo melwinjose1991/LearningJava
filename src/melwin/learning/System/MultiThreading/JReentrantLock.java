@@ -17,20 +17,20 @@ public class JReentrantLock {
 				count++;
 			}
 		}
-		
+
 		// cond.await() & cond.signal() similar to wait() & notify()
 
 		public void firstThread() throws InterruptedException {
 			lock.lock();
-			//System.out.println("Waiting ....");
-			//cond.await();
-			//System.out.println("Woken up!");
-			System.out.println(Thread.currentThread().getName()+" IN");
+			// System.out.println("Waiting ....");
+			// cond.await();
+			// System.out.println("Woken up!");
+			System.out.println(Thread.currentThread().getName() + " IN");
 			try {
 				increment();
 			} finally {
 				Thread.sleep(1000);
-				System.out.println(Thread.currentThread().getName()+" EXITing");
+				System.out.println(Thread.currentThread().getName() + " EXITing");
 				lock.unlock();
 			}
 		}
@@ -45,7 +45,7 @@ public class JReentrantLock {
 			try {
 				increment();
 			} finally {
-				// should be written to unlock Thread whenever 
+				// should be written to unlock Thread whenever
 				// signal() is called
 				lock.unlock();
 			}
@@ -83,8 +83,8 @@ public class JReentrantLock {
 		t2.join();
 		runner.finished();
 	}
-	
-	// Producer Consumer using Locks : 
+
+	// Producer Consumer using Locks :
 	// javarevisited.blogspot.com/2015/06/java-lock-and-condition-example-producer-consumer.html
 
 }

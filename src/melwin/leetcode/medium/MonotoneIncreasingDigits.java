@@ -3,12 +3,12 @@ package melwin.leetcode.medium;
 // 738. Monotone Increasing Digits - O(N)
 
 public class MonotoneIncreasingDigits {
-	
+
 	public int monotoneIncreasingDigits(int N) {
 
 		if (N <= 9)
 			return N;
-		
+
 		char[] x = String.valueOf(N).toCharArray();
 
 		int mark = x.length;
@@ -18,11 +18,11 @@ public class MonotoneIncreasingDigits {
 				x[i - 1]--;
 			}
 		}
-		
+
 		for (int i = mark + 1; i < x.length; i++) {
 			x[i] = '9';
 		}
-		
+
 		return Integer.parseInt(new String(x));
 	}
 

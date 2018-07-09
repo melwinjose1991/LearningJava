@@ -36,7 +36,7 @@ public class BinaryTreeVerticalOrderTraversal {
 		int max = 0;
 
 		while (!queue.isEmpty()) {
-			
+
 			int curr_lvl_nodes = queue.size();
 			for (int i = 1; i <= curr_lvl_nodes; i++) {
 				TreeColumnNode node = queue.poll();
@@ -55,7 +55,7 @@ public class BinaryTreeVerticalOrderTraversal {
 					max = Math.max(node.col + 1, max);
 				}
 			}
-			
+
 		}
 
 		for (int i = min; i <= max; i++) {

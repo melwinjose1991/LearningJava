@@ -5,7 +5,7 @@ import melwin.leetcode.hard.ListNode;
 // 21 - Merge Two Sorted Lists - O(n)
 
 public class MergeTwoSortedLists {
-	
+
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		if (l1 == null) {
 			return l2;

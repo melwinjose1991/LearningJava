@@ -3,7 +3,7 @@ package melwin.leetcode.easy;
 // 443 - String Compression - O(n)
 
 public class StringCompression {
-	
+
 	public int compress(char[] chars) {
 		int indexAns = 0, index = 0;
 		while (index < chars.length) {

@@ -79,7 +79,7 @@ public class Q3 {
 		}
 
 		public void printDistance(double d) {
-			System.out.println("2D distance = " + (int)Math.ceil(d));
+			System.out.println("2D distance = " + (int) Math.ceil(d));
 		}
 	}
 
@@ -96,10 +96,9 @@ public class Q3 {
 		}
 
 		public void printDistance(double d) {
-			System.out.println("3D distance = " + (int)Math.ceil(d));
+			System.out.println("3D distance = " + (int) Math.ceil(d));
 		}
 	}
-
 
 	public static void main(String[] args) {
 	}

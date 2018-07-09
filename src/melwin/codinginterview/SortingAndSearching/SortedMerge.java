@@ -14,16 +14,16 @@ public class SortedMerge {
 	private static void sortedMerge(int A[], int B[]) {
 		int k = A.length - 1;
 		int a_i = 0, b_i = B.length - 1;
-		
+
 		// finding the index of the last element in A
 		for (int j = A.length - 1; j >= 0; j--) {
-			if (A[j] != -1){
+			if (A[j] != -1) {
 				a_i = j;
 				break;
 			}
 		}
-		System.out.println(" a_i:"+a_i+"\tb_i:"+b_i+"\tk:"+k);
-		
+		System.out.println(" a_i:" + a_i + "\tb_i:" + b_i + "\tk:" + k);
+
 		// ||MERGE_SORT||
 		while (a_i >= 0 && b_i >= 0) {
 			if (A[a_i] > B[b_i]) {
@@ -47,9 +47,9 @@ public class SortedMerge {
 		// ||NEW_TECHNIQUE||
 		System.out.println(Arrays.toString(A));
 		System.out.println(Arrays.toString(B));
-		
+
 		sortedMerge(A, B);
-		
+
 		System.out.println(Arrays.toString(A));
 	}
 

@@ -6,7 +6,7 @@ import java.util.List;
 // position is somehow breakable
 
 public class WordBreak {
-	
+
 	public boolean wordBreak(String s, List<String> dict) {
 		boolean[] f = new boolean[s.length() + 1];
 

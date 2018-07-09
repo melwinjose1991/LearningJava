@@ -3,7 +3,7 @@ package melwin.leetcode.easy;
 // 628 - Maximum Product Of Three Numbers - O(n)/O(1)
 
 public class MaximumProductOfThreeNumbers {
-	
+
 	public int maximumProduct(int[] nums) {
 		int max1 = Integer.MIN_VALUE, max2 = Integer.MIN_VALUE, max3 = Integer.MIN_VALUE, min1 = Integer.MAX_VALUE,
 				min2 = Integer.MAX_VALUE;

@@ -10,7 +10,7 @@ public class HTestingWaitNotify {
 			System.out.println("@Produce::Outside sycn block");
 			synchronized (this) {
 				System.out.println("@Produce::Entered sycn block, going to wait()");
-				wait();	//looses control over the block and goes silent
+				wait(); // looses control over the block and goes silent
 				System.out.println("@Produce::notified, Exiting sycn block");
 			}
 		}

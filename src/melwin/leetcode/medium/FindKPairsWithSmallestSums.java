@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 // 373 - Find K Pairs with Smallest Sums - O(K.logK)
 
 public class FindKPairsWithSmallestSums {
-	
+
 	public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
 
 		PriorityQueue<int[]> que = new PriorityQueue<>((a, b) -> a[0] + a[1] - b[0] - b[1]);

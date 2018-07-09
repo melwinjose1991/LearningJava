@@ -9,7 +9,7 @@ import java.util.Set;
 // 752. Open the Lock
 
 public class OpenTheLock {
-	
+
 	public int openLock(String[] deadends, String target) {
 		Queue<String> q = new LinkedList<>();
 		Set<String> deads = new HashSet<>(Arrays.asList(deadends));

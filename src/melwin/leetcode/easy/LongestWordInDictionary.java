@@ -7,7 +7,7 @@ import java.util.Set;
 // 720 - Longest Word In Dictionary - BFS on Sorted Strings
 
 public class LongestWordInDictionary {
-	
+
 	public String longestWord(String[] words) {
 		Arrays.sort(words);
 		Set<String> built = new HashSet<String>();

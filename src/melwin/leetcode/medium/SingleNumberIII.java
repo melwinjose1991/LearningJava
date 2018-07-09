@@ -3,9 +3,9 @@ package melwin.leetcode.medium;
 // 260 - Single Number III
 
 public class SingleNumberIII {
-	
+
 	public int[] singleNumber(int[] nums) {
-		
+
 		// Pass 1 :
 		// Get the XOR of the two numbers we need to find
 		int diff = 0;

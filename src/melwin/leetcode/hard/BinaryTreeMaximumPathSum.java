@@ -5,7 +5,7 @@ import melwin.leetcode.medium.TreeNode;
 // 124. Binary Tree Maximum Path Sum - O(n) - lots of cases of +/-
 
 public class BinaryTreeMaximumPathSum {
-	
+
 	public int maxPathSum(TreeNode root) {
 		int[] max = new int[1];
 		max[0] = Integer.MIN_VALUE;

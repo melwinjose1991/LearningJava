@@ -6,7 +6,7 @@ import java.util.List;
 // 366 - Find Leaves of Binary Tree - O(n) - get max distance to leaf
 
 public class FindLeavesOfBinaryTree {
-	
+
 	public List<List<Integer>> findLeaves(TreeNode root) {
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		helper(result, root);

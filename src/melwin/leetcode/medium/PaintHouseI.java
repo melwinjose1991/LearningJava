@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // Paint House I - 3x Linear DP
 
 public class PaintHouseI {
-	
+
 	public int minCost(int[][] costs) {
 		if (costs == null || costs.length == 0)
 			return 0;

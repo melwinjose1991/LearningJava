@@ -31,7 +31,7 @@ public class NInterrupts {
 
 		executor.shutdown();
 
-		future.cancel(true);	// thread.interrput()
+		future.cancel(true); // thread.interrput()
 
 		executor.shutdownNow();
 

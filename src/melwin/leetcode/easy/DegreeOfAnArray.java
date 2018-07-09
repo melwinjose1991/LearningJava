@@ -6,7 +6,7 @@ import java.util.Map;
 // 697 - Degree Of An Array - O(n)
 // [0]=count, [1]=start_index, [2]=end_index
 public class DegreeOfAnArray {
-	
+
 	public int findShortestSubArray(int[] nums) {
 		Map<Integer, int[]> db = new Hashtable<>();
 		int size = nums.length;

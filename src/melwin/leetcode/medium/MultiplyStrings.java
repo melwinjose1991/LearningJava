@@ -4,7 +4,7 @@ package melwin.leetcode.medium;
 // ith x jth => [i+j, i+j+1] in the final solution
 
 public class MultiplyStrings {
-	
+
 	public String multiply(String num1, String num2) {
 
 		int m = num1.length(), n = num2.length();
@@ -26,7 +26,7 @@ public class MultiplyStrings {
 		for (int p : pos)
 			if (!(sb.length() == 0 && p == 0))
 				sb.append(p);
-		
+
 		return sb.length() == 0 ? "0" : sb.toString();
 	}
 

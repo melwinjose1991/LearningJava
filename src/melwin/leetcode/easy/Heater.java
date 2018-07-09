@@ -5,7 +5,7 @@ import java.util.Arrays;
 // 475 - Heaters
 
 public class Heater {
-	
+
 	public int findRadius(int[] houses, int[] heaters) {
 		Arrays.sort(heaters);
 		int result = Integer.MIN_VALUE;

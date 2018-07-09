@@ -6,9 +6,10 @@ import java.util.HashMap;
 // ||RUNNING SUM|| ||CRACKING||
 
 public class PathsWithSum {
-	
-	// source : CtCI-6th-Edition/Java/Ch 04. Trees and Graphs/Q4_12_Paths_with_Sum/QuestionB.java
-	
+
+	// source : CtCI-6th-Edition/Java/Ch 04. Trees and
+	// Graphs/Q4_12_Paths_with_Sum/QuestionB.java
+
 	public static int countPathsWithSum(TreeNode root, int targetSum) {
 		return countPathsWithSum(root, targetSum, 0, new HashMap<Integer, Integer>());
 	}
@@ -65,11 +66,11 @@ public class PathsWithSum {
 
 	public static void main(String[] args) {
 		/*
-		 * TreeNode root = new TreeNode(5); root.left = new TreeNode(3);
-		 * root.right = new TreeNode(1); root.left.left = new TreeNode(-8);
-		 * root.left.right = new TreeNode(8); root.right.left = new TreeNode(2);
-		 * root.right.right = new TreeNode(6); root.right.left.left = new
-		 * TreeNode(0); System.out.println(countPathsWithSum(root, 0));
+		 * TreeNode root = new TreeNode(5); root.left = new TreeNode(3); root.right =
+		 * new TreeNode(1); root.left.left = new TreeNode(-8); root.left.right = new
+		 * TreeNode(8); root.right.left = new TreeNode(2); root.right.right = new
+		 * TreeNode(6); root.right.left.left = new TreeNode(0);
+		 * System.out.println(countPathsWithSum(root, 0));
 		 */
 
 		TreeNode root = new TreeNode(-7);

@@ -3,7 +3,7 @@ package melwin.leetcode.easy;
 // 26. Remove Duplicates from Sorted Array - O(n)
 
 public class RemoveDuplicatesFromSortedArray {
-	
+
 	public int removeDuplicates(int[] A) {
 		if (A.length == 0)
 			return 0;

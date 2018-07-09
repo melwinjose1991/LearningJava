@@ -6,7 +6,7 @@ import java.util.List;
 // 241 - Different Ways to Add Parentheses
 
 public class DifferentWaysToAddParentheses {
-	
+
 	public static List<Integer> diffWaysToCompute(String input) {
 		List<Integer> ret = new LinkedList<Integer>();
 

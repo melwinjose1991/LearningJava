@@ -35,8 +35,8 @@ public class PalindromePermutation {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(checkPalindromePermutation("Tact Coa")?"YES":"NO");
-		System.out.println(checkPalindromePermutation("Tac Coa")?"YES":"NO");
+		System.out.println(checkPalindromePermutation("Tact Coa") ? "YES" : "NO");
+		System.out.println(checkPalindromePermutation("Tac Coa") ? "YES" : "NO");
 	}
 
 }

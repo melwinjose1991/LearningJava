@@ -6,7 +6,7 @@ import java.util.List;
 // 95 - Unique Binary Search Trees II - Recursive function is slightly different 
 
 public class UniqueBinarySearchTreeII {
-	
+
 	public List<TreeNode> generateTrees(int n) {
 		return genTreeList(1, n);
 	}

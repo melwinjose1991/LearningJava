@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 5. Longest Palindromic Substring - O(n^2)
 
 public class LongestPalindromicSubstring {
-	
+
 	public String longestPalindrome(String s) {
 		int n = s.length();
 		String res = null;

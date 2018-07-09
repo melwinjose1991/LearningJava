@@ -9,7 +9,7 @@ import java.util.TreeSet;
 // 721 - Accounts Merge - Union-Find
 
 public class AccountsMerge {
-	
+
 	public List<List<String>> accountsMerge(List<List<String>> acts) {
 		Map<String, String> owner = new HashMap<>();
 		Map<String, String> parents = new HashMap<>();

@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 211. Add and Search Word
 
 public class AddAndSearchWord {
-	
+
 	public class TrieNode {
 		public TrieNode[] children = new TrieNode[26];
 		public String item = "";

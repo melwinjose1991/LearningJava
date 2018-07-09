@@ -6,7 +6,7 @@ import java.util.List;
 // 216. Combination Sum III
 
 public class CombinationSumIII {
-	
+
 	public List<List<Integer>> combinationSum3(int k, int n) {
 		List<List<Integer>> ans = new ArrayList<>();
 		combination(ans, new ArrayList<Integer>(), k, 1, n);

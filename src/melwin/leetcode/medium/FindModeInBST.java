@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 501 - Find Mode in BST
 
 public class FindModeInBST {
-	
+
 	public int[] findMode(TreeNode root) {
 		inorder(root);
 		modes = new int[modeCount];

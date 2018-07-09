@@ -6,7 +6,7 @@ import java.util.Map;
 // 525 - Contiguous Array - O(n) - change 0 to -1
 
 public class ContinguousArray {
-	
+
 	public int findMaxLength(int[] nums) {
 
 		for (int i = 0; i < nums.length; i++) {

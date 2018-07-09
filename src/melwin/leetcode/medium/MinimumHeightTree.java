@@ -19,7 +19,7 @@ public class MinimumHeightTree {
 		List<Set<Integer>> adj = new ArrayList<>(n);
 		for (int i = 0; i < n; ++i)
 			adj.add(new HashSet<>());
-		
+
 		for (int[] edge : edges) {
 			adj.get(edge[0]).add(edge[1]);
 			adj.get(edge[1]).add(edge[0]);

@@ -6,7 +6,7 @@ import java.util.Set;
 // 349 - Intersection of Two Arrays
 
 public class IntersectionOfTwoArrays {
-	
+
 	public class Solution {
 		public int[] intersection(int[] nums1, int[] nums2) {
 			Set<Integer> set = new HashSet<>();

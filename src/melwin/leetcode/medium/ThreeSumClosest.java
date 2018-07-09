@@ -5,7 +5,7 @@ import java.util.Arrays;
 // 16. 3Sum Closest - O(n^2)
 
 public class ThreeSumClosest {
-	
+
 	public int threeSumClosest(int[] num, int target) {
 		int result = num[0] + num[1] + num[num.length - 1];
 		Arrays.sort(num);

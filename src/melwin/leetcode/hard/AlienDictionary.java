@@ -10,26 +10,26 @@ import java.util.Set;
 // 269 - Alien Dictionary - O(m.n)
 
 public class AlienDictionary {
-	
+
 	public String alienOrder(String[] words) {
-		
-		// key=char1	value=<set of chars that occur after char1>
+
+		// key=char1 value=<set of chars that occur after char1>
 		Map<Character, Set<Character>> map = new HashMap<Character, Set<Character>>();
-		
-		// key=char1	value=#of chars that occur before this
+
+		// key=char1 value=#of chars that occur before this
 		Map<Character, Integer> degree = new HashMap<Character, Integer>();
 		String result = "";
-		
+
 		if (words == null || words.length == 0)
 			return result;
-		
+
 		for (String s : words) {
 			for (char c : s.toCharArray()) {
 				degree.put(c, 0);
 			}
 		}
-		
-		// for each char record times where it occurred after some 
+
+		// for each char record times where it occurred after some
 		// other char
 		for (int i = 0; i < words.length - 1; i++) {
 			String cur = words[i];
@@ -51,7 +51,7 @@ public class AlienDictionary {
 				}
 			}
 		}
-		
+
 		// add the chars which has never occurred after
 		// any other char into the queue
 		Queue<Character> q = new LinkedList<Character>();
@@ -59,7 +59,7 @@ public class AlienDictionary {
 			if (degree.get(c) == 0)
 				q.add(c);
 		}
-		
+
 		// remove the lexicographically first element and
 		// reduce the count of chars that occur after it
 		while (!q.isEmpty()) {
@@ -73,10 +73,10 @@ public class AlienDictionary {
 				}
 			}
 		}
-		
+
 		if (result.length() != degree.size())
 			return "";
-		
+
 		return result;
 	}
 

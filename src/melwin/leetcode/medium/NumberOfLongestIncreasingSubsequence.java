@@ -3,12 +3,12 @@ package melwin.leetcode.medium;
 // 673. Number of Longest Increasing Subsequence - O(n^2) - 2 linear DP
 
 public class NumberOfLongestIncreasingSubsequence {
-	
+
 	public int findNumberOfLIS(int[] nums) {
-		
+
 		int n = nums.length, res = 0, max_len = 0;
 		int[] len = new int[n], cnt = new int[n];
-		
+
 		for (int i = 0; i < n; i++) {
 			len[i] = cnt[i] = 1;
 			for (int j = 0; j < i; j++) {
@@ -28,7 +28,7 @@ public class NumberOfLongestIncreasingSubsequence {
 				res = cnt[i];
 			}
 		}
-		
+
 		return res;
 	}
 

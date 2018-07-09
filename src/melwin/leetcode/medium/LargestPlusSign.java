@@ -5,7 +5,7 @@ import java.util.Arrays;
 // 764. Largest Plus Sign - O(n^2)
 
 public class LargestPlusSign {
-	
+
 	public int orderOfLargestPlusSign(int N, int[][] mines) {
 		int[][] grid = new int[N][N];
 

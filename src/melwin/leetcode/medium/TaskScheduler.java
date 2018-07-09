@@ -5,7 +5,7 @@ import java.util.Arrays;
 // 621 - Task Scheduler - O(N.logN)
 
 public class TaskScheduler {
-	
+
 	public int leastInterval(char[] tasks, int n) {
 
 		int[] c = new int[26];

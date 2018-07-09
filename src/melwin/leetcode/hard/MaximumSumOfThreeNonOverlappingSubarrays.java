@@ -5,12 +5,12 @@ package melwin.leetcode.hard;
 public class MaximumSumOfThreeNonOverlappingSubarrays {
 
 	public int[] maxSumOfThreeSubarrays(int[] nums, int k) {
-		
+
 		int n = nums.length, maxsum = 0;
 		int[] sum = new int[n + 1], posLeft = new int[n], posRight = new int[n], ans = new int[3];
 		for (int i = 0; i < n; i++)
 			sum[i + 1] = sum[i] + nums[i];
-		
+
 		// DP for starting index of the left max sum interval
 		for (int i = k, tot = sum[k] - sum[0]; i < n; i++) {
 			if (sum[i + 1] - sum[i + 1 - k] > tot) {
@@ -19,7 +19,7 @@ public class MaximumSumOfThreeNonOverlappingSubarrays {
 			} else
 				posLeft[i] = posLeft[i - 1];
 		}
-		
+
 		// DP for starting index of the right max sum interval
 		// caution: the condition is ">= tot" for right interval, and "> tot"
 		// for left interval
@@ -31,7 +31,7 @@ public class MaximumSumOfThreeNonOverlappingSubarrays {
 			} else
 				posRight[i] = posRight[i + 1];
 		}
-		
+
 		// test all possible middle interval
 		for (int i = k; i <= n - 2 * k; i++) {
 			int l = posLeft[i - 1], r = posRight[i + k];

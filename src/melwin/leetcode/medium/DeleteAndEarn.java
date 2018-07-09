@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 740 - Delete And Earn - O(n) - 2 x Linear DP
 
 public class DeleteAndEarn {
-	
+
 	public int deleteAndEarn(int[] nums) {
 		int n = 10001;
 		int[] values = new int[n];

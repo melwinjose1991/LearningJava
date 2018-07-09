@@ -24,7 +24,8 @@ public class BinarySearchTreeIterator {
 	}
 
 	private void pushAll(TreeNode node) {
-		for (; node != null; stack.push(node), node = node.left);
+		for (; node != null; stack.push(node), node = node.left)
+			;
 	}
 
 	public static void main(String[] args) {

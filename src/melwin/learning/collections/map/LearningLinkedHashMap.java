@@ -49,6 +49,6 @@ public class LearningLinkedHashMap {
 		else
 			System.out.println("adding <2, one> failed");
 		// Key=2, with same object
-		
+
 	}
 }

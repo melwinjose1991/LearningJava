@@ -3,7 +3,7 @@ package melwin.leetcode.easy;
 // 598 - Range Addition II
 
 public class RangeSumII {
-	
+
 	public int maxCount(int m, int n, int[][] ops) {
 		if (ops == null || ops.length == 0) {
 			return m * n;

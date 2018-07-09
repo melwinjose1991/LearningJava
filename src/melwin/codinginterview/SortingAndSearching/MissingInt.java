@@ -7,7 +7,6 @@ package melwin.codinginterview.SortingAndSearching;
  * TAGS : ||NEW_TECHNIQUE|| ||BINARY|| ||CRACKING||
  */
 
-
 public class MissingInt {
 	private static byte[] bitfield = new byte[2];
 	private static int[] inputs = { 0, 1, 2, 3, 4, 5, 6, 8, 9, 10 };
@@ -23,7 +22,7 @@ public class MissingInt {
 			byte b = bitfield[i];
 			for (int j = 0; j < 8; j++) {
 				if ((b & (1 << j)) == 0) {
-					return ((i*8)+j) > inputs[inputs.length-1] ? -1 : ((i*8)+j);
+					return ((i * 8) + j) > inputs[inputs.length - 1] ? -1 : ((i * 8) + j);
 				}
 			}
 		}

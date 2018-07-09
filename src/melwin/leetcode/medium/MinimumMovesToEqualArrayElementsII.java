@@ -5,7 +5,7 @@ import java.util.Arrays;
 // 462. Minimum Moves to Equal Array Elements II
 
 public class MinimumMovesToEqualArrayElementsII {
-	
+
 	public int minMoves2(int[] nums) {
 		Arrays.sort(nums);
 		int i = 0, j = nums.length - 1;

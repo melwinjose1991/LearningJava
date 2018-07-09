@@ -41,7 +41,7 @@ public class TextJustification {
 
 				int spaces = (L - count) / diff; // spaces for all words
 				int r = (L - count) % diff; // extra spaces for some words
-				
+
 				for (int i = index + 1; i < last; i++) {
 					for (int k = spaces; k > 0; k--) {
 						builder.append(" ");

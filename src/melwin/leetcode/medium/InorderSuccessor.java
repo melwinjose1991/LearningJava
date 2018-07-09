@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 285 - Inorder Successor - O(n)
 
 public class InorderSuccessor {
-	
+
 	public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
 		if (root == null)
 			return null;

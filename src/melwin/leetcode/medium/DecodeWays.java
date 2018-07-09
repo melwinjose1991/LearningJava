@@ -3,7 +3,7 @@ package melwin.leetcode.medium;
 // 91 - Decode Ways
 
 public class DecodeWays {
-	
+
 	public int numDecodings(String s) {
 		if (s == null || s.length() == 0) {
 			return 0;
