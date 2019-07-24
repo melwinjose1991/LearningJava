@@ -1,5 +1,7 @@
 package melwin.leetcode.easy;
 
+// Tree | DFS
+
 public class LowestCommonAncestorOfDeepestLeaves {
 	public class TreeNode {
 		int val;
