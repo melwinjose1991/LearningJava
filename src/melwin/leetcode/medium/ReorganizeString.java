@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.PriorityQueue;
 
+// Priority Queue
+
 public class ReorganizeString {
 	public static String reorganizeString(String S) {
 		HashMap<Character, Integer> char_count = new HashMap<>();
