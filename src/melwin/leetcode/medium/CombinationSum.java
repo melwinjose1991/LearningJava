@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// Arrays | Combination | Medium
+// Arrays | Combination | XXX
 
 public class CombinationSum {
 	private static List<List<Integer>> results;
