@@ -4,3 +4,4 @@
 *.pydevproject
 /bin/
 /src/melwin/InternshipTests/*
+/src/melwin/interviews/*
