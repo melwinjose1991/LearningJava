@@ -10,24 +10,20 @@ public class MeetingRoomsII {
 	public int minMeetingRooms(int[][] intervals) {
 		Arrays.sort(intervals, Comparator.comparing((int[] itv) -> itv[0]));
 
-		PriorityQueue<Integer> heap = new PriorityQueue<>();
-		int count = 0;
-		for (int[] itv : intervals) {
-			if (heap.isEmpty()) {
-				count++;
-				heap.offer(itv[1]);
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
+		int max_rooms = 0;
+		for (int[] intv : intervals) {
+			if (pq.isEmpty()) {
+				pq.offer(intv[1]);
 			} else {
-				if (itv[0] >= heap.peek()) {
-					heap.poll();
-				} else {
-					count++;
+				while (pq.size() > 0 && intv[0] > pq.peek()) {
+					pq.poll();
 				}
-
-				heap.offer(itv[1]);
+				pq.add(intv[1]);
 			}
+			max_rooms = Math.max(max_rooms, pq.size());
 		}
-
-		return count;
+		return max_rooms;
 	}
 
 	public static void main(String[] args) {
